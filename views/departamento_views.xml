@@ -1,0 +1,42 @@
+<odoo>
+    <!-- Vista de lista para el modelo practicas.departamento -->
+    <record id="view_departamento_list" model="ir.ui.view">
+        <field name="name">practicas.departamento.list</field>
+        <field name="model">practicas.departamento</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="codigo"/>
+                <field name="director_id"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Vista de formulario para el modelo practicas.departamento -->
+    <record id="view_departamento_form" model="ir.ui.view">
+        <field name="name">practicas.departamento.form</field>
+        <field name="model">practicas.departamento</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="codigo"/>
+                        <field name="director_id"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Acción para abrir la vista de lista de departamentos -->
+    <record id="action_departamento" model="ir.actions.act_window">
+        <field name="name">Departamentos</field>
+        <field name="res_model">practicas.departamento</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <!-- Menú para acceder a la vista de departamentos -->
+    <menuitem id="menu_departamento_root" name="Departamentos"/>
+    <menuitem id="menu_departamento" name="Departamentos" parent="menu_departamento_root" action="action_departamento"/>
+</odoo>

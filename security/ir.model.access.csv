@@ -1,0 +1,4 @@
+"id","name","model_id:id","group_id:id","perm_read","perm_write","perm_create","perm_unlink"
+"access_practicas_alumno","access_practicas_alumno","model_practicas_alumno","","1","1","1","1"
+"access_practicas_departamento","access_practicas_departamento","model_practicas_departamento","","1","1","1","1"
+"access_practicas_grado","access_practicas_grado","model_practicas_grado","","1","1","1","1"
